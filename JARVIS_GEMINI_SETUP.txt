@@ -1,0 +1,26 @@
+J.A.R.V.I.S Gemini Setup
+=========================
+
+1. Install:
+   py -m pip install -U -r requirements_JARVIS_GEMINI_FAST_NEURAL.txt
+
+2. Set the Gemini API key securely in Windows Environment Variables:
+   Variable name: GEMINI_API_KEY
+   Variable value: your NEW Gemini key
+
+3. Close all existing terminals and open a NEW CMD.
+
+4. Start:
+   py app_JARVIS_GEMINI_FAST_NEURAL.py
+
+5. Open:
+   http://127.0.0.1:5000
+
+The Gemini model can be changed without editing code:
+   JARVIS_GEMINI_MODEL=gemini-3.8-flash
+
+The frontend remains the same JARVIS fast-neural HUD and continues using /api/chat_stream, /api/chat, /api/command and /api/tts.
+
+Security:
+- Never paste the API key into HTML, Python, screenshots, GitHub, or chat.
+- Revoke and replace a key if it is exposed.
